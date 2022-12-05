@@ -5,12 +5,49 @@ public class UserInfo {
         this.surName = surName;
         this.balance = balance;
         this.password = password;
+
     }
 
-   private String name;
-   private String surName;
-   private double balance;
-   private String password;
+    private String name;
+    private String surName;
+    private double balance;
+    private String password;
+
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        if (name.contains(".")){
+            System.out.println("you can not add a symbol when creating a name");
+        }else {
+            this.name = name;
+        }
+
+    }
+
+    public String getSurName() {
+        return surName;
+    }
+
+    public void setSurName(String surName) {
+        this.surName = surName;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+
 
 
     @Override
